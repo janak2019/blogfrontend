@@ -36,7 +36,7 @@ export default function EditBlog(){
 
     }
       const fetchSingleBlog = async ()=>{    
-        const response = await axios.get("http://localhost:3000/blog/" + id)
+        const response = await axios.get("https://blogbackend-7mys.onrender.com/blog/" + id)
         if(response.status === 200){
             setData({
                 title : response.data.data.title,

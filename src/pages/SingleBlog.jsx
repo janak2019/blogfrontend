@@ -18,7 +18,7 @@ export default function SingleBlog() {
 
     },[])
     const deleteBlog = async ()=>{
-       const response =  await axios.delete("http://localhost:3000/blog/" + id)
+       const response =  await axios.delete("https://blogbackend-7mys.onrender.com/blog/" + id)
       
         if(response.status === 200){
             alert("Deleted successfully")
@@ -36,7 +36,7 @@ export default function SingleBlog() {
                     <div className="flex flex-col md:flex-row -mx-4">
                         <div className="md:flex-1 px-4">
                             <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                                <img className="w-full h-full object-cover" src={"http://localhost:3000/" +blog.image} alt="Image"/>
+                                <img className="w-full h-full object-cover" src={"https://blogbackend-7mys.onrender.com/" +blog.image} alt="Image"/>
                             </div>
                             <div className="flex -mx-2 mb-4">
                                 <div className="w-1/2 px-2">
