@@ -3,7 +3,7 @@ import { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import SingleBlog from "./pages/SingleBlog"
-import CreateBlog from "./pages/createBlog"
+import CreateBlog from "./pages/CreateBlog"
 import EditBlog from "./pages/EditBlog"
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element= {<Home />} />
-        {/* <Route path="/blog/:id" element= {<SingleBlog />} />
+        <Route path="/blog/:id" element= {<SingleBlog />} />
         <Route path="/create" element= {<CreateBlog />} />
-        <Route path="/edit/:id" element= {<EditBlog />} /> */}
+        <Route path="/edit/:id" element= {<EditBlog />} />
         
       </Routes>
 
