@@ -18,7 +18,7 @@ export default function EditBlog(){
     }
     const editBlog =async (e)=>{
         e.preventDefault()
-        const response = await axios.patch("http://localhost:3000/blog/" + id,data,{
+        const response = await axios.patch("https://blogbackend-7mys.onrender.com/blog/" + id,data,{
             headers : {
                 "Content-Type" : "multipart/form-data"
             }
